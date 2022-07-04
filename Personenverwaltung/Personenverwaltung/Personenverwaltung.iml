@@ -14,7 +14,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="Personenverwaltung" value="0d9c45b3-a6ca-46a9-b86a-96d8459b0fc9" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>

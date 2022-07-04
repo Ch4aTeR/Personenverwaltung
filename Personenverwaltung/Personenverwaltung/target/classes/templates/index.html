@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Personenverwaltung</title>
 </head>
 <body>
+    <h1>Personenverwaltung</h1>
+    <h3>Übersicht</h3>
+
+    <table>
+        <tr style="border-bottom: black">
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+        <tr th:each = "person: ${person}">
+            <td th:text="${person.vorname}"></td>
+            <td th:text="${person.nachname}"></td>
+            <td th:text="${person.email}"></td>
+        <td><button class="editbtn">edit</button></td>
+        <td><button class="delbtn">delete</button></td>
+        </tr>
+        </tr>
+    </table>
+
+    <button onclick="document.location='newPerson.html'">Neue Person hinzufügen</button>
 
 </body>
 </html>

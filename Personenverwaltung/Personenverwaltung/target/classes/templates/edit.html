@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" th:value="${person.vorname}"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" th:value="${person.nachname}"><br><br>
+        <label for="email">EMail:</label><br>
+        <input type="text" id="email" name="email" th:value="${person.email}"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age" th:value="${person.age}"><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender" th:value="${person.gender}"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
